@@ -1,17 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%"   stop-color="#00d4ff"/>
-      <stop offset="50%"  stop-color="#4f8ef7"/>
-      <stop offset="100%" stop-color="#6c3dda"/>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#06d6f0"/>
+      <stop offset="48%"  stop-color="#4f8ef7"/>
+      <stop offset="100%" stop-color="#7c5ce7"/>
     </linearGradient>
   </defs>
-  <!-- Top L-shape -->
-  <rect x="10" y="10" width="14" height="52" rx="4" fill="url(#g)"/>
-  <rect x="10" y="10" width="42" height="14" rx="4" fill="url(#g)"/>
-  <!-- Bottom L-shape (offset right+down) -->
-  <rect x="42" y="38" width="14" height="52" rx="4" fill="url(#g)"/>
-  <rect x="42" y="76" width="42" height="14" rx="4" fill="url(#g)"/>
+  <!-- Outer L – left vertical bar -->
+  <rect x="7"  y="8"  width="21" height="72" rx="7" fill="url(#g)"/>
+  <!-- Outer L – bottom horizontal bar -->
+  <rect x="7"  y="61" width="65" height="21" rx="7" fill="url(#g)"/>
+  <!-- Inner L – shorter right vertical -->
+  <rect x="41" y="19" width="16" height="54" rx="6" fill="url(#g)"/>
+  <!-- Inner L – narrow bottom horizontal -->
+  <rect x="41" y="58" width="40" height="16" rx="6" fill="url(#g)"/>
   <!-- Arrow connector -->
-  <path d="M40 44 L54 52 L40 60 Z" fill="url(#g)" opacity="0.9"/>
+  <path d="M58 41 L75 51 L58 61 Z" fill="url(#g)"/>
 </svg>
