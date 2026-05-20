@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Demo — See How LeadaLine Would Work for Your Business</title>
+  <meta name="description" content="Book a demo call with LeadaLine. We will review your current enquiry process, show the Lead Engine and explain what a pilot could look like for your business.">
+  <meta property="og:title" content="Book a Demo — LeadaLine Lead Engine">
+  <meta property="og:description" content="Book a free demo call. We review your enquiry process, show the Lead Engine and explain what a pilot setup could look like.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.leadaline.com/book-a-demo.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav" id="mainNav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="LeadaLine home">
+      <span class="logo-mark" aria-hidden="true">L</span>LeadaLine
+    </a>
+    <ul class="nav-links" role="list" aria-label="Main navigation">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="demo.html" class="nav-link">Live Demo</a></li>
+      <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+      <li><a href="what-you-get.html" class="nav-link">What You Get</a></li>
+      <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+      <li><a href="faq.html" class="nav-link">FAQ</a></li>
+    </ul>
+    <div class="nav-ctas">
+      <a href="demo.html" class="btn btn-outline btn-sm">Try Demo</a>
+      <a href="book-a-demo.html" class="btn btn-primary btn-sm">Book a Demo</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
+    <ul class="nav-mobile-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="demo.html">Live Demo</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="what-you-get.html">What You Get</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="nav-mobile-ctas">
+      <a href="demo.html" class="btn btn-outline btn-full">Try the Live Demo</a>
+      <a href="book-a-demo.html" class="btn btn-primary btn-full">Book a Demo</a>
+    </div>
+  </nav>
+</nav>
+
+<div class="page-wrapper">
+
+  <!-- ── HEADER ── -->
+  <section class="section-sm bg-grid" style="padding-top:64px">
+    <div class="container-sm text-center">
+      <span class="section-badge">Free demo call</span>
+      <h1 class="section-title" style="font-size:clamp(1.8rem,4vw,2.75rem);margin-bottom:14px">See how LeadaLine would work for your business.</h1>
+      <p class="section-subtitle">We will review your current enquiry process, show the Lead Engine demo and explain what a pilot setup could look like.</p>
+    </div>
+  </section>
+
+  <!-- ── BOOK LAYOUT ── -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="book-layout">
+
+        <!-- Form -->
+        <div>
+          <div class="book-form-card" id="formWrap">
+            <h2 style="font-size:1.25rem;font-weight:700;margin-bottom:6px">Tell us about your business</h2>
+            <p style="font-size:0.9375rem;color:var(--text-muted);margin-bottom:28px">Takes about two minutes. No commitment required.</p>
+
+            <form id="bookForm" novalidate aria-label="Book a demo form">
+              <div class="form-grid">
+
+                <div class="form-grid form-grid-2">
+                  <div class="form-group">
+                    <label class="form-label" for="name">Your name <span class="req" aria-label="required">*</span></label>
+                    <input class="form-input" type="text" id="name" name="name" required autocomplete="name" placeholder="Your full name" aria-required="true">
+                    <span class="form-error" role="alert" aria-live="polite"></span>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="business_name">Business name <span class="req" aria-label="required">*</span></label>
+                    <input class="form-input" type="text" id="business_name" name="business_name" required autocomplete="organization" placeholder="Your business name" aria-required="true">
+                    <span class="form-error" role="alert" aria-live="polite"></span>
+                  </div>
+                </div>
+
+                <div class="form-grid form-grid-2">
+                  <div class="form-group">
+                    <label class="form-label" for="email">Email address <span class="req" aria-label="required">*</span></label>
+                    <input class="form-input" type="email" id="email" name="email" required autocomplete="email" placeholder="you@yourbusiness.co.uk" aria-required="true">
+                    <span class="form-error" role="alert" aria-live="polite"></span>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="phone">Phone number <span class="req" aria-label="required">*</span></label>
+                    <input class="form-input" type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="07xxx xxxxxx" aria-required="true">
+                    <span class="form-error" role="alert" aria-live="polite"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="website_url">Website URL</label>
+                  <input class="form-input" type="url" id="website_url" name="website_url" autocomplete="url" placeholder="https://www.yourbusiness.co.uk">
+                  <span class="form-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-grid form-grid-2">
+                  <div class="form-group">
+                    <label class="form-label" for="industry">Industry / trade <span class="req" aria-label="required">*</span></label>
+                    <select class="form-select" id="industry" name="industry" required aria-required="true">
+                      <option value="" disabled selected>Select your industry</option>
+                      <option value="Roofing">Roofing</option>
+                      <option value="Plumbing">Plumbing</option>
+                      <option value="Electrical">Electrical</option>
+                      <option value="Building / Construction">Building / Construction</option>
+                      <option value="Property Maintenance">Property Maintenance</option>
+                      <option value="Waste Removal">Waste Removal</option>
+                      <option value="Landscaping">Landscaping</option>
+                      <option value="Cleaning Services">Cleaning Services</option>
+                      <option value="Clinic / Health">Clinic / Health</option>
+                      <option value="Estate Agency">Estate Agency</option>
+                      <option value="Professional Services">Professional Services</option>
+                      <option value="Other Service Business">Other Service Business</option>
+                    </select>
+                    <span class="form-error" role="alert" aria-live="polite"></span>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="enquiries">Average enquiries per month</label>
+                    <select class="form-select" id="enquiries" name="enquiries">
+                      <option value="" disabled selected>Roughly how many?</option>
+                      <option value="Fewer than 10">Fewer than 10</option>
+                      <option value="10–30">10–30</option>
+                      <option value="30–60">30–60</option>
+                      <option value="60–100">60–100</option>
+                      <option value="100+">100+</option>
+                      <option value="Not sure">Not sure</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="lead_problem">Biggest lead challenge <span class="req" aria-label="required">*</span></label>
+                  <select class="form-select" id="lead_problem" name="lead_problem" required aria-required="true">
+                    <option value="" disabled selected>What is your biggest challenge?</option>
+                    <option value="Missed calls">Missed calls while on site or after hours</option>
+                    <option value="Slow replies">Slow replies to enquiries</option>
+                    <option value="Poor lead tracking">No clear way to track or follow up leads</option>
+                    <option value="Low-quality enquiries">Low-quality or unqualified enquiries</option>
+                    <option value="No clear follow-up process">No consistent follow-up process</option>
+                    <option value="Leads lost in inbox">Enquiries getting lost in email or forms</option>
+                    <option value="Other">Something else</option>
+                  </select>
+                  <span class="form-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="message">Anything else you would like us to know?</label>
+                  <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your current enquiry process, how leads come in, or any specific questions you have…" aria-label="Additional message or context"></textarea>
+                </div>
+
+                <div>
+                  <button type="submit" class="btn btn-primary btn-full btn-lg" id="submitBtn">
+                    Request a demo call
+                  </button>
+                  <p style="font-size:0.8125rem;color:var(--text-muted);margin-top:12px;text-align:center">
+                    No pressure. The first call is to see whether LeadaLine is a good fit for your business.
+                  </p>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+          <!-- Success state -->
+          <div class="book-form-card success-state" id="successState" role="alert" aria-live="polite">
+            <div class="success-icon" aria-hidden="true">✓</div>
+            <h2 class="success-title">Demo request received</h2>
+            <p class="success-text">
+              Thanks — your demo request has been received. We will review your business and follow up with next steps within one working day.
+            </p>
+            <p style="font-size:0.9rem;color:var(--text-muted);margin-top:16px">
+              While you wait, you can <a href="demo.html" style="color:var(--accent)">try the live demo</a> or <a href="how-it-works.html" style="color:var(--accent)">read how LeadaLine works</a>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Side panel -->
+        <div class="book-side">
+
+          <div class="review-card">
+            <div class="review-card-title">What we will review on the call</div>
+            <div class="review-steps" role="list">
+              <div class="review-step" role="listitem">
+                <div class="review-step-num" aria-hidden="true">1</div>
+                <p class="review-step-text">How you currently receive customer enquiries</p>
+              </div>
+              <div class="review-step" role="listitem">
+                <div class="review-step-num" aria-hidden="true">2</div>
+                <p class="review-step-text">Where leads may be getting missed or lost</p>
+              </div>
+              <div class="review-step" role="listitem">
+                <div class="review-step-num" aria-hidden="true">3</div>
+                <p class="review-step-text">How quickly customers currently get a response</p>
+              </div>
+              <div class="review-step" role="listitem">
+                <div class="review-step-num" aria-hidden="true">4</div>
+                <p class="review-step-text">Whether LeadaLine is a good fit for your business</p>
+              </div>
+              <div class="review-step" role="listitem">
+                <div class="review-step-num" aria-hidden="true">5</div>
+                <p class="review-step-text">What your first workflow could look like</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="reassure-card">
+            <h3 class="reassure-title">No pressure, no commitment</h3>
+            <p class="reassure-text">The first call is a conversation, not a sales pitch. If LeadaLine is not the right fit for your business, we will say so. If it is, we will explain exactly what setup would involve and what the pilot costs.</p>
+          </div>
+
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px">
+            <p style="font-size:0.875rem;font-weight:600;color:var(--text-secondary);margin-bottom:10px">Prefer to explore first?</p>
+            <a href="demo.html" class="btn btn-ghost btn-full" style="margin-bottom:8px">Try the live demo</a>
+            <a href="faq.html" class="btn btn-ghost btn-full">Read the FAQ</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><span class="logo-mark" aria-hidden="true">L</span>LeadaLine</a>
+        <p class="footer-tagline">AI Lead Engine for UK service businesses. Capture, qualify and respond to customer enquiries automatically — so fewer leads slip through the cracks.</p>
+      </div>
+      <div class="footer-links-col">
+        <h4>Product</h4>
+        <ul role="list">
+          <li><a href="demo.html">Live Demo</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="what-you-get.html">What You Get</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Company</h4>
+        <ul role="list">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="book-a-demo.html">Book a Demo</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 LeadaLine. All rights reserved. Built for UK service businesses.</p>
+      <p>LeadaLine processes enquiry data securely and in line with GDPR principles.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/book.js"></script>
+</body>
+</html>

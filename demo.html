@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Demo — Try the LeadaLine Lead Engine</title>
+  <meta name="description" content="Ask the LeadaLine AI assistant anything about how the Lead Engine works. See it in action before you book a demo.">
+  <meta property="og:title" content="Live Demo — Try the LeadaLine Lead Engine">
+  <meta property="og:description" content="Talk to the LeadaLine AI assistant and see how the Lead Engine handles enquiries for UK service businesses.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.leadaline.com/demo.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav" id="mainNav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="LeadaLine home">
+      <span class="logo-mark" aria-hidden="true">L</span>LeadaLine
+    </a>
+    <ul class="nav-links" role="list" aria-label="Main navigation">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="demo.html" class="nav-link">Live Demo</a></li>
+      <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+      <li><a href="what-you-get.html" class="nav-link">What You Get</a></li>
+      <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+      <li><a href="faq.html" class="nav-link">FAQ</a></li>
+    </ul>
+    <div class="nav-ctas">
+      <a href="demo.html" class="btn btn-outline btn-sm">Try Demo</a>
+      <a href="book-a-demo.html" class="btn btn-primary btn-sm">Book a Demo</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
+    <ul class="nav-mobile-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="demo.html">Live Demo</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="what-you-get.html">What You Get</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="nav-mobile-ctas">
+      <a href="demo.html" class="btn btn-outline btn-full">Try the Live Demo</a>
+      <a href="book-a-demo.html" class="btn btn-primary btn-full">Book a Demo</a>
+    </div>
+  </nav>
+</nav>
+
+<div class="page-wrapper">
+
+  <!-- ── HERO ── -->
+  <section class="section-sm bg-grid" style="padding-top:64px">
+    <div class="container-sm text-center">
+      <span class="section-badge">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        Live &amp; working
+      </span>
+      <h1 class="section-title" style="font-size:clamp(1.8rem,4vw,2.75rem);margin-bottom:14px">Try the LeadaLine Lead Engine</h1>
+      <p class="section-subtitle">Ask the assistant anything about LeadaLine, how the Lead Engine works, or whether it could fit your business.</p>
+    </div>
+  </section>
+
+  <!-- ── DEMO LAYOUT ── -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="demo-layout">
+
+        <!-- Voice assistant card -->
+        <div>
+          <div class="assistant-card" role="region" aria-label="Voice assistant">
+            <div class="assistant-header">
+              <div class="assistant-avatar" aria-hidden="true">🤖</div>
+              <div class="assistant-info">
+                <div class="assistant-name">LeadaLine AI Assistant</div>
+                <div class="assistant-status">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  Ready to talk
+                </div>
+              </div>
+              <div style="margin-left:auto">
+                <span style="font-size:0.75rem;color:var(--text-muted);background:var(--bg-card);padding:4px 10px;border-radius:100px;border:1px solid var(--border)">Voice demo</span>
+              </div>
+            </div>
+            <div class="assistant-body">
+              <button class="call-btn" id="callBtn" aria-label="Start voice call with LeadaLine AI assistant">
+                🎙️
+              </button>
+              <div>
+                <p class="call-label" id="callLabel">Click to start a voice conversation</p>
+                <p class="call-sub" id="callSub">Talk to the LeadaLine AI — ask anything about the system</p>
+              </div>
+              <div style="width:100%;background:var(--bg-surface);border:1px solid var(--border);border-radius:var(--radius-md);padding:14px 16px;text-align:left">
+                <p style="font-size:0.8125rem;color:var(--text-muted);line-height:1.6">
+                  <strong style="color:var(--text-secondary)">Note:</strong> This is a Q&amp;A demo only. The assistant will answer questions about LeadaLine but will not submit a real lead or trigger any backend workflow during the public demo.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Answer display -->
+          <div id="sqAnswer" style="display:none;background:var(--bg-card);border:1px solid var(--border-accent);border-radius:var(--radius-lg);padding:22px 24px;margin-top:16px" role="region" aria-live="polite" aria-label="Answer"></div>
+
+          <!-- Workflow visual -->
+          <div class="workflow-visual" aria-label="Example client workflow">
+            <div class="wf-step">
+              <div class="wf-icon" aria-hidden="true">💬</div>
+              <div class="wf-label">Customer<br>Enquiry</div>
+            </div>
+            <div class="wf-arrow" aria-hidden="true">→</div>
+            <div class="wf-step">
+              <div class="wf-icon" aria-hidden="true">🤖</div>
+              <div class="wf-label">AI<br>Qualification</div>
+            </div>
+            <div class="wf-arrow" aria-hidden="true">→</div>
+            <div class="wf-step">
+              <div class="wf-icon" aria-hidden="true">📋</div>
+              <div class="wf-label">Owner<br>Summary</div>
+            </div>
+            <div class="wf-arrow" aria-hidden="true">→</div>
+            <div class="wf-step">
+              <div class="wf-icon" aria-hidden="true">📊</div>
+              <div class="wf-label">CRM<br>Dashboard</div>
+            </div>
+            <div class="wf-arrow" aria-hidden="true">→</div>
+            <div class="wf-step">
+              <div class="wf-icon" aria-hidden="true">✅</div>
+              <div class="wf-label">Follow-up<br>&amp; Booked</div>
+            </div>
+            <p class="wf-caption">Example client workflow — not triggered by this public demo</p>
+          </div>
+        </div>
+
+        <!-- Suggested questions panel -->
+        <div>
+          <div class="sq-panel" role="complementary" aria-label="Suggested questions">
+            <p class="sq-title">Try asking</p>
+            <div class="sq-buttons" role="list">
+              <button class="sq-btn" data-q="what-does" role="listitem">What does LeadaLine do?</button>
+              <button class="sq-btn" data-q="how-help" role="listitem">How does it help service businesses?</button>
+              <button class="sq-btn" data-q="not-chatbot" role="listitem">Is this different from a chatbot?</button>
+              <button class="sq-btn" data-q="existing-site" role="listitem">Can it work with my current website?</button>
+              <button class="sq-btn" data-q="pilot" role="listitem">What happens during the pilot?</button>
+              <button class="sq-btn" data-q="book-demo" role="listitem">How do I book a demo?</button>
+            </div>
+          </div>
+
+          <div style="margin-top:20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px">
+            <h3 style="font-size:1rem;font-weight:700;margin-bottom:14px">What the voice assistant can answer</h3>
+            <ul style="display:flex;flex-direction:column;gap:10px" role="list">
+              <li style="display:flex;gap:9px;align-items:flex-start;font-size:0.9rem;color:var(--text-secondary)">
+                <span style="color:var(--accent);margin-top:1px;flex-shrink:0">✓</span>What LeadaLine does and how it works
+              </li>
+              <li style="display:flex;gap:9px;align-items:flex-start;font-size:0.9rem;color:var(--text-secondary)">
+                <span style="color:var(--accent);margin-top:1px;flex-shrink:0">✓</span>How it compares to chatbots and contact forms
+              </li>
+              <li style="display:flex;gap:9px;align-items:flex-start;font-size:0.9rem;color:var(--text-secondary)">
+                <span style="color:var(--accent);margin-top:1px;flex-shrink:0">✓</span>Whether it suits your business type
+              </li>
+              <li style="display:flex;gap:9px;align-items:flex-start;font-size:0.9rem;color:var(--text-secondary)">
+                <span style="color:var(--accent);margin-top:1px;flex-shrink:0">✓</span>How email and SMS alerts work
+              </li>
+              <li style="display:flex;gap:9px;align-items:flex-start;font-size:0.9rem;color:var(--text-secondary)">
+                <span style="color:var(--accent);margin-top:1px;flex-shrink:0">✓</span>Pricing, setup and the pilot programme
+              </li>
+            </ul>
+          </div>
+
+          <div style="margin-top:20px;text-align:center">
+            <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:14px">Ready to see it set up for your business?</p>
+            <a href="book-a-demo.html" class="btn btn-primary btn-full">Book a demo call</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="cta-title">Ready to stop losing enquiries?</h2>
+      <p class="cta-sub">Try the live demo or book a call to see how LeadaLine could work for your business.</p>
+      <div class="btn-group" style="justify-content:center">
+        <a href="book-a-demo.html" class="btn btn-primary btn-lg">Book a demo</a>
+        <a href="how-it-works.html" class="btn btn-outline btn-lg">See how it works</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><span class="logo-mark" aria-hidden="true">L</span>LeadaLine</a>
+        <p class="footer-tagline">AI Lead Engine for UK service businesses. Capture, qualify and respond to customer enquiries automatically — so fewer leads slip through the cracks.</p>
+      </div>
+      <div class="footer-links-col">
+        <h4>Product</h4>
+        <ul role="list">
+          <li><a href="demo.html">Live Demo</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="what-you-get.html">What You Get</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Company</h4>
+        <ul role="list">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="book-a-demo.html">Book a Demo</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 LeadaLine. All rights reserved. Built for UK service businesses.</p>
+      <p>LeadaLine processes enquiry data securely and in line with GDPR principles.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/demo.js"></script>
+</body>
+</html>
