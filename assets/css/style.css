@@ -143,14 +143,15 @@ input, textarea, select { font-family: inherit; }
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  color: var(--text-primary);
   flex-shrink: 0;
   text-decoration: none;
 }
+.nav-logo-img {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+/* Fallback: keep logo-mark in case SVG fails to load */
 .logo-mark {
   width: 32px; height: 32px;
   background: var(--accent);
@@ -163,6 +164,8 @@ input, textarea, select { font-family: inherit; }
   font-weight: 900;
   flex-shrink: 0;
 }
+/* Footer logo slightly smaller */
+.footer-brand .nav-logo-img { height: 28px; }
 .nav-links {
   display: flex;
   align-items: center;

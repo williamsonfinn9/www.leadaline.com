@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" fill="none">
+  <defs>
+    <!-- Icon gradient: cyan top-left → blue-purple bottom-right -->
+    <linearGradient id="icon-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#00d4ff"/>
+      <stop offset="50%"  stop-color="#4f8ef7"/>
+      <stop offset="100%" stop-color="#6c3dda"/>
+    </linearGradient>
+    <!-- Wordmark accent gradient for 'a' -->
+    <linearGradient id="a-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#4f8ef7"/>
+    </linearGradient>
+    <!-- i-dot gradient -->
+    <linearGradient id="i-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#7c5ce7"/>
+      <stop offset="100%" stop-color="#4f8ef7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ═══════════════════════════════════
+       ICON  — LL pipeline mark
+       Two interlocking L-shapes with a
+       connecting right-pointing arrow
+  ════════════════════════════════════ -->
+
+  <!-- Left / top L-shape (vertical bar + top horizontal) -->
+  <rect x="18" y="14" width="18" height="68" rx="5" fill="url(#icon-grad)"/>
+  <rect x="18" y="14" width="52" height="18" rx="5" fill="url(#icon-grad)"/>
+
+  <!-- Right / lower L-shape (shifted right + down) -->
+  <rect x="62" y="42" width="18" height="50" rx="5" fill="url(#icon-grad)"/>
+  <rect x="62" y="74" width="42" height="18" rx="5" fill="url(#icon-grad)"/>
+
+  <!-- Arrow connector between the two L-shapes -->
+  <path d="M54 52 L70 60 L54 68 Z" fill="url(#icon-grad)" opacity="0.95"/>
+
+  <!-- ═══════════════════════════════════
+       WORDMARK  — LeadaLine
+  ════════════════════════════════════ -->
+
+  <!-- "Lead" white -->
+  <text x="124" y="83" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="800" fill="#ffffff" letter-spacing="-2">Lead</text>
+
+  <!-- "a" cyan accent -->
+  <text x="280" y="83" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="800" fill="url(#a-grad)" letter-spacing="-2">a</text>
+
+  <!-- "L" white -->
+  <text x="316" y="83" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="800" fill="#ffffff" letter-spacing="-2">L</text>
+
+  <!-- "i" with purple dot (render as two pieces: bar + dot) -->
+  <!-- dot above -->
+  <circle cx="365" cy="27" r="7" fill="url(#i-grad)"/>
+  <!-- bar -->
+  <text x="358" y="83" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="800" fill="#ffffff" letter-spacing="-2">i</text>
+
+  <!-- "ne" white -->
+  <text x="379" y="83" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="800" fill="#ffffff" letter-spacing="-2">ne</text>
+</svg>
